@@ -14,12 +14,26 @@
 			background-size: 100% auto;
 		}
 		
+		main {
+			margin-top: 15px;
+		}
+		
 		.site-header {
-			background-image: url("src/images/mau-header.png");
+			background-image: url("src/images/banner-v6.png");
 			background-repeat: no-repeat;
-			
+			height: 140px;
 			background-position: center;
-			height: 200px;
+			padding: 0;
+		}
+		
+		.site-header h1 {
+			margin: 0;
+			font-family: 'Brush Script MT',cursive;
+			color: #7487A3;
+		}
+		
+		.site-header::before {
+			background-image: none;
 		}
 		
 		iframe {
@@ -35,12 +49,27 @@
 		}
 
 		.media-inner {
-			padding-bottom: 104px;
+			padding-bottom: 52px;
 		}
-		
+
 		.youtube-link {
 			width: 200px;
 			height: 100px;
+		}
+		
+		/* Mobile Youtube */
+		@media screen and (max-width:767px) {
+			iframe[src*="youtube"] {
+				width: 100% !important;
+			}
+		}
+		
+		.youtube .container-sm {
+			padding: 0px;
+		}
+		
+		.youtube .media-inner {
+			padding-bottom: 0px;
 		}
 		
 		.text-center img {
@@ -48,38 +77,70 @@
 			margin-left: auto;
 			margin-right: auto;
 		}
+
+		.title {
+			margin-top: 30px;
+			text-align: center;
+		}
+
+		h1 {
+			font-family: arial,sans-serif;
+		}
 		
+		.hero-title {
+			margin-bottom: 20px;
+		}
+		
+		.hero-paragraph {
+			margin-bottom: 0px;
+		}
+		
+		.site-footer-inner {
+			padding-bottom: 0px;
+			padding-top: 15px;
+		}
+		
+		.footer-brand {
+			margin-bottom: 0px;
+		}
+		
+		.footer-social-links {
+			flex: none;
+			width: 100%;
+			display: inline-flex;
+			justify-content: center;
+
+		}
 	</style
 </head>
 <body class="main is-boxed has-animations">
     <div class="body-wrap boxed-container">
         <header class="site-header">
-            <div class="container">
-            </div>
+			<div class="title">
+				<h1>Explicitly Spoiled</h1>
+			</div>
         </header>
-		<br /><br />
         <main>
             <section class="media section">
                 <div class="container-sm">
                     <div class="media-inner">
                         <div class="media-header text-center">
-	                        <h1 class="hero-title mt-0">Welcome to our podcast ! </h1>
+	                        <h1 class="hero-title mt-0">Welcome to our podcast!</h1>
 	                        <p class="hero-paragraph">
 
 <p>We’re Alexandra & Monica, 2 girlfriends talking all things yoga, wellbeing, friendship, life.</p>
 
-<p>✨Opinionated, spicy and sassy 
-🔥 No topic is off topic</p>
+<p>✨Opinionated, spicy and sassy</p>
+<p>🔥 No topic is off topic</p>
 
 Join us every Friday for a new episode 6pm GMT! </p>
-							<br /><br />
 	                        <a href="https://www.youtube.com/@ExplicitlySpoiled" target="_blank"><img class="youtube-link" src='src/images/youtube-logo.webp'></src></a>
 						</div>
                     </div>
                 </div>
             </section>
 
-            <section class="media section">
+            <section class="media section youtube">
                 <div class="container-sm">
                     <div class="media-inner">
 						<iframe width="800" height="450" src="https://www.youtube.com/embed/bQjbUJgRKnA">
@@ -93,41 +154,6 @@ Join us every Friday for a new episode 6pm GMT! </p>
             <div class="container">
                 <div class="site-footer-inner has-top-divider">
                     <div class="brand footer-brand">
-                        <a href="#">
-							<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-								<title>Laurel</title>
-								<defs>
-									<linearGradient x1="0%" y1="100%" x2="50%" y2="0%" id="logo-footer-a">
-										<stop stop-color="#F9425F" stop-opacity=".8" offset="0%"/>
-										<stop stop-color="#47A1F9" stop-opacity=".16" offset="100%"/>
-									</linearGradient>
-									<linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="logo-footer-b">
-										<stop stop-color="#FDFFDA" offset="0%"/>
-										<stop stop-color="#F97059" stop-opacity=".798" offset="49.935%"/>
-										<stop stop-color="#F9425F" stop-opacity="0" offset="100%"/>
-									</linearGradient>
-								</defs>
-								<g fill="none" fill-rule="evenodd">
-									<path d="M22 19.22c6.627 0 9.593-6.415 9.593-13.042C31.593-.45 28.627.007 22 .007S10 2.683 10 9.31c0 6.628 5.373 9.91 12 9.91z" fill="url(#logo-footer-a)"/>
-									<path d="M13.666 31.889c7.547 0 10.924-7.307 10.924-14.854 0-7.547-3.377-7.027-10.924-7.027C6.118 10.008 0 13.055 0 20.603c0 7.547 6.118 11.286 13.666 11.286z" fill="url(#logo-footer-b)" transform="matrix(-1 0 0 1 24.59 0)"/>
-								</g>
-							</svg>
-                        </a>
-                    </div>
-                    <ul class="footer-links list-reset">
-                        <li>
-                            <a href="#">Contact</a>
-                        </li>
-                        <li>
-                            <a href="#">About us</a>
-                        </li>
-                        <li>
-                            <a href="#">FAQ's</a>
-                        </li>
-                        <li>
-                            <a href="#">Support</a>
-                        </li>
-                    </ul>
                     <ul class="footer-social-links list-reset">
                         <li>
                             <a href="#">
@@ -154,7 +180,6 @@ Join us every Friday for a new episode 6pm GMT! </p>
                             </a>
                         </li>
                     </ul>
-                    <div class="footer-copyright">&copy; 2018 Laurel, all rights reserved</div>
                 </div>
             </div>
         </footer>
