@@ -63,8 +63,12 @@
 		/* Mobile Youtube */
 		@media screen  {
 			iframe[src*="youtube"] {
-				width: 85vw !important;
-				height: 45vw;
+			  width: 100vw;
+			  max-width: 177.78vh;
+			  /* 16/9 = 1.778 */
+			  height: 56.25vw;
+			  /* height:width ratio = 9/16 = .5625  */
+			  max-height: 100vh;
 			}
 		}
 		
