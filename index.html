@@ -55,11 +55,6 @@
 		.media-inner {
 			padding-bottom: 52px;
 		}
-
-		.youtube-link {
-			width: 200px;
-			height: 100px;
-		}
 		
 		/* Mobile Youtube */
 		@media screen  {
@@ -121,9 +116,62 @@
 
 		}
 		
+		
+		.youtube-link {
+			height: 60px;
+			width: 100px;
+		}
+		
 		.btnTest {
 		   background:url('images/icon.png') no-repeat left center;
 		   padding-left:20px;
+		}
+		
+
+		/* CSS */
+		.button-5 {
+			width: 360px;
+			align-items: center;
+			background-clip: padding-box;
+			background-color: #484848;
+			border: 1px solid transparent;
+			border-radius: .25rem;
+			box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+			box-sizing: border-box;
+			color: #fff;
+			cursor: pointer;
+			display: inline-flex;
+			font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+			font-size: 50px;
+			font-weight: 600;
+			justify-content: center;
+			line-height: 1.25;
+			margin: 0;
+			min-height: 3rem;
+			padding: calc(1.2rem - 1px) calc(0.6rem - 1px);
+			position: relative;
+			text-decoration: none;
+			transition: all 250ms;
+			user-select: none;
+			-webkit-user-select: none;
+			touch-action: manipulation;
+			vertical-align: baseline;
+		}
+
+		.button-5:hover,
+		.button-5:focus {
+		  background-color: #fb8332;
+		  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+		}
+
+		.button-5:hover {
+		  transform: translateY(-1px);
+		}
+
+		.button-5:active {
+		  background-color: #c85000;
+		  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+		  transform: translateY(0);
 		}
 	</style
 </head>
@@ -141,14 +189,21 @@
                         <div class="media-header text-center">
 	                        <h1 class="hero-title mt-0">Welcome to our podcast!</h1>
 	                        <p class="hero-paragraph">
+								<p>We’re Alexandra & Monica, 2 girlfriends talking all things yoga, wellbeing, friendship, life.</p>
 
-<p>We’re Alexandra & Monica, 2 girlfriends talking all things yoga, wellbeing, friendship, life.</p>
+								<p>
+									✨Opinionated, spicy and sassy<br/>
+									🔥 No topic is off topic
+								</p>
 
-<p>✨Opinionated, spicy and sassy<br/>
-🔥 No topic is off topic</p>
-
-Join us every Friday for a new episode 6pm GMT! </p>
-	                        <a href="https://www.youtube.com/@ExplicitlySpoiled" target="_blank"><img class="youtube-link" src='src/images/youtube-logo.webp'></src></a>
+								Join us every Friday for a new episode 6pm GMT! 
+							</p>
+							<!-- HTML !-->
+							<a href="https://www.youtube.com/@ExplicitlySpoiled" target="_blank">
+								<button class="button-5" role="button">
+									Click here<img class="youtube-link" src='src/images/youtube-logo-hd-8-crop.png'></src>
+								</button>
+							</a>
 						</div>
                     </div>
                 </div>
